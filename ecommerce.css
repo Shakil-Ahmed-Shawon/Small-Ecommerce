@@ -463,3 +463,32 @@ footer .fot{
 }
 
                     /* Footer- End */
+
+                    /* Media - start */
+
+    /* For 14 Inch Display */
+
+@media (max-width: 1900px){
+    .banner-image{
+        width: 40%;
+    }
+    
+    
+    
+    .banner-text{
+        margin-left: 15%;
+        transform: scale(0.8);
+    }
+    
+    
+    .box-h3{
+        width: 100px;
+    }
+
+    .social{
+        position: fixed;
+        top: 200px;
+        transform: scale(0.8);
+     }
+     
+}
