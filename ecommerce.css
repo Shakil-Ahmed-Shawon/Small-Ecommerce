@@ -11,7 +11,6 @@ header{
     height: 80px;
     display: flex;
     align-items: center;
-    background-color: red;
 }
 
 .logo{
@@ -24,10 +23,29 @@ header{
 }
 
 .find{
+    width: 150px;
+    height: 35px;
+    border: 3px solid black;
+    font-size: 15px;
+    border-radius: 50px;
+    padding: 0 30px 0 20px;
     position: fixed;
     top: 20px;
     right: 20px;
+    z-index: 1;
 }
+
+header .fa-magnifying-glass{
+    position: fixed;
+    top: 29px;
+    right: 33px;
+    z-index: 3;
+}
+
+.find:focus{
+    outline: none;
+}
+
 
             /* Header End */
 
@@ -38,7 +56,6 @@ header{
     height: 700px;
     display: flex;
     align-items: center;
-    background-color: green;
 }
 
 .banner-image{
@@ -91,8 +108,27 @@ header{
     left: 30px;
     top: 350px;
     border-radius: 50px;
-    z-index: 1;
-    background-color: blue;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    font-size: 20px;
+    color: rgb(58, 58, 58);
+    box-shadow: 1px 1px 6px black, -1px -1px 6px black;
+}
+
+.social .fa-facebook-f:hover{
+    color: blue;
+}
+
+.social .fa-twitter:hover{
+    color: rgb(18, 154, 207);
+}
+
+.social .fa-instagram:hover, .fa-youtube:hover{
+    color: red;
 }
 
 .first-cart{
@@ -101,7 +137,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: pink;
 }
 
 .cart-1{
@@ -110,7 +145,6 @@ header{
     border-radius: 10px;
     box-shadow: 3px 3px 10px black, -3px -3px 10px black;
     overflow: hidden;
-    background-color: greenyellow;
 }
 
 .cart-title-1{
@@ -121,9 +155,6 @@ header{
     font-weight: bold;
     padding-top: 15px;
     color: rgb(50, 53, 67);
-
-    
-    background-color: bisque;
 }
 
 
@@ -139,7 +170,6 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: aqua;
 }
 
 
@@ -147,12 +177,11 @@ header{
     width: 300px;
     height: 350px;
     border-radius: 10px;
-    box-shadow: 2px 2px 4px black, -2px -2px 4px black;
+    box-shadow: 2px 2px 8px black, -2px -2px 8px black;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: brown;
 }
 
 .cart-img{
@@ -204,7 +233,6 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: skyblue;
 }
 
 
@@ -257,7 +285,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: orange;
 }
 
 .cart-2{
@@ -266,7 +293,6 @@ header{
     border-radius: 10px;
     box-shadow: 3px 3px 10px black, -3px -3px 10px black;
     overflow: hidden;
-    background-color: gray;
 }
 
 .cart-title-2{
@@ -278,8 +304,6 @@ header{
     font-size: 40px;
     font-weight: bold;
     color: rgb(50, 53, 67);
-
-    background-color: rgb(206, 206, 216);
 }
 
 
@@ -295,14 +319,147 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-
-    background-color: blue;
 }
 
 .box-2{
     width: 300px;
     height: 350px;
     border-radius: 10px;
-
-    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 2px 2px 8px black, -2px -2px 8px black;
 }
+
+
+.box-2-img{
+    width: 240px;
+    height: 320px;
+}
+
+.box-2 p{
+    position: absolute;
+    bottom: 25px;
+    color: rgb(177, 177, 177);
+
+}
+
+.box-2 span{
+    position: absolute;
+    bottom: 20px;
+}
+
+.cart-2-btn{
+    position: absolute;
+    bottom: -20px;
+}
+
+.add-cart-btn-2{
+    color: white;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, rgb(107, 96, 236), rgb(155, 101, 243));
+    display: none;
+}
+
+.box-2:hover .add-cart-btn-2{
+    display: inline-block;
+}
+
+
+                            /* Shopping Cart 2 - End */
+
+                            /* Contact Us - Start */
+
+.abt-us{
+    width: 1fr;
+    height: 230px;
+    overflow: hidden;
+}
+
+.subscribe{
+    padding-top: 50px;
+}
+
+.subscribe h2{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mail-us{
+    width: 1fr;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mail-us form{
+    padding-top: 40px;
+}
+
+.emal{
+    width: 400px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.emal:focus{
+    outline: none;
+}
+
+.snd{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+}
+
+.snd:hover{
+    background-color: rgb(122, 114, 255);
+}
+
+                                /* Contact Us - End */
+
+                                /* Footer - Start */
+
+hr{
+    margin: 0;
+}
+
+footer{
+    width: 1fr;
+    height: 60px;
+
+    background-color: black;
+}
+
+footer .fot{
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: white;
+    padding-top: 22px;
+}
+
+.fot a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+
+.fot a:hover{
+    color: blue;
+}
+
+                    /* Footer- End */
